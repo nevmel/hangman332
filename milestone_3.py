@@ -3,23 +3,20 @@ def check_guess(guess):
  word = set("apple")
  guess = guess.lower()
  if guess in word:
-   print(f"Good guess {guess} is in the word.")
+   print(f"Good guess, {guess} is in the word.")
  else:
    print(f"Sorry, {guess} is not in the word. Try again.") #, ask_for_input()
 
 
 def ask_for_input():
-
-
-    guess = input("Giz a letter! ")
     
-
     while True:
-    # guess = input("Please choose a single letter: ")
+      guess = input("Please choose a single letter: ")
       if guess.isalpha()==True and len(guess)==1:
        break
       else:
-       print("Invalid letter. Please, enter a single alphabetical character.") 
+       print("Invalid letter. Please, enter a single alphabetical character.")
+       
     
     check_guess(guess)   
 
