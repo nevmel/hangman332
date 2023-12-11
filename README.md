@@ -3,13 +3,22 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
-Installation instructions, run from file milestone_5
+## Installation instructions
 
+Run from file milestone_5
+
+## Licence 
 Licence is open
+
+## Structure of GIT
 
 "Milestone" files build on one another to show the progression of the task (Milestone_1 was setting up the Git Hub and environment etc)
 
+### What the programme does
+
 A text based (no graphics) hangman game that can be run in the terminal.
+
+## Aims and Outcomes
 The aim of the project was to learn how to use a CLASS structure for coding, to make code neater and more efficient, and to practice using functions within a Class.
 I learned a lot, mainly to take my time and not get too frustrated when something doesn't go quite to plan.
 
