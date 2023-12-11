@@ -2,6 +2,9 @@ import random
 # imports the random function into python
 
 class Hangman:
+    """MAIN CLASS DEFINITION
+    Setting variables and key features of the programme
+    """
     
     def __init__(self, word_list,num_lives):
         self.word_list = word_list
@@ -14,6 +17,9 @@ class Hangman:
 
 
     def check_guess(self,guess):
+        """Checks to see if user input 'guess' is in the code
+        Alters counters dependent on status of 'guess'"""
+
         guess = guess.lower() #converts the letter to lower case, one check instead of Upper and Lower
         if guess in self.word:
             print(f"Good guess, {guess} is in the word.")
@@ -32,7 +38,7 @@ class Hangman:
 
     def ask_for_input(self):
         """Starting point for the code to play the game
-        notice that it is at the bottme so that everything else is created and organised before play actually commences"""
+        notice that it is at the bottom so that everything else is created and organised before play actually commences"""
         
         while  True:
             guess = input("Please choose a single letter: ")
@@ -48,7 +54,7 @@ class Hangman:
 
 
 def play_game(word_list): # word_list passed in from function call
-    num_lives = 5
+    num_lives = 5 # sets number of lives available
     game = Hangman(word_list,num_lives) # pass word_list and number of lives to the main Class, and shorthand the class title
 
     while True:
